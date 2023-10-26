@@ -1,0 +1,45 @@
+@import "../var/mixins-variables-functions";
+
+* {
+  @include universalDefaults;
+}
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+body {
+  background-color: $primary;
+  overflow-x: hidden;
+}
+
+section {
+  height: clamp(70vh, 100vh, 110vh);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 66.5%;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+  background-color: $secondary;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: $primary;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 52%;
+  }
+}
+
+@media only screen and (max-width: 495px) {
+  html {
+    font-size: 42%;
+  }
+}

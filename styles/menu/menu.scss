@@ -1,0 +1,109 @@
+@import "../var/mixins-variables-functions";
+
+#menu {
+  position: relative;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.688) 0%,
+      rgba(0, 0, 0, 0.57) 100%
+    ),
+    url(/imgs/chicken-background.webp), lightgray 50% / cover no-repeat;
+  background-size: cover;
+
+  h2 {
+    padding: 2rem;
+    color: $primary;
+    font-weight: 700;
+  }
+
+  .menu-container {
+    @include dfc;
+    gap: 5rem;
+
+    .menu-card {
+      transition: all 500ms ease;
+      box-shadow: rgba(152, 42, 64, 0.579) 0px 2px 5px 1px;
+      border-radius: 0.2rem;
+      padding: 1rem;
+      @include color-combo1;
+      width: 27rem;
+      height: 30rem;
+      position: relative !important;
+      overflow: hidden;
+      .menu-pic {
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        user-select: none;
+        margin-left: -2rem;
+        width: 120%;
+        height: 75%;
+      }
+
+      .menu-name {
+        font-weight: 600;
+        position: absolute;
+        top: 75%;
+        font-family: Montserrat;
+      }
+
+      .menu-price {
+        transition: all 400ms ease;
+        @include color-combo2;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        left: 50%;
+        bottom: 2rem;
+        transform: translateX(-50%);
+        padding: 0.3rem 2rem;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+        @include color-combo2;
+        .menu-price {
+          @include color-combo1;
+        }
+      }
+    }
+  }
+  .taste-the-family-logo {
+    pointer-events: none;
+    user-select: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1rem;
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #menu {
+    height: 100vh;
+    .menu-container {
+      justify-content: flex-start;
+      height: 100% !important;
+      gap: 3rem;
+      flex-direction: column;
+      .menu-card {
+        width: 50%;
+        height: 25%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 495px) {
+  #menu {
+    height: 110vh;
+    .menu-container {
+      .menu-card {
+        width: 65%;
+        height: 26%;
+      }
+    }
+  }
+}

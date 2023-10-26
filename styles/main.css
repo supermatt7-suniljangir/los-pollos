@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url(./home/home.css);
+@import url(./html/html.css);
+@import url(./nav/nav.css);
+@import url(./about/about.css);
+@import url(./typo/typo.css);
+@import url(./menu/menu.css);
+@import url(./jl/jl.css);
+@import url(./os/os.css);
+@import url(./footer/footer.css);

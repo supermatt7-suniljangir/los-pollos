@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+#footer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#footer .footer-logo {
+  height: 45%;
+  width: 100%;
+  margin-bottom: -3.5 rem;
+}
+#footer .footer-container {
+  position: relative;
+  gap: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #f3d70d;
+  background-color: #b02d47;
+  height: 65%;
+  width: 100%;
+}
+#footer .footer-container h2 {
+  text-transform: uppercase;
+}
+#footer .footer-container .social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+#footer .footer-container .social-links .social-item {
+  list-style-type: none !important;
+}
+#footer .footer-container .social-links .social-item .social-link .social-icon {
+  width: 5rem;
+}
+#footer .footer-container .project-description {
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 500;
+  width: 75%;
+  line-height: 3rem;
+}
+#footer .footer-container .copyright-notice {
+  font-family: Montserrat;
+  font-size: 13px;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  #footer {
+    height: 60vh;
+  }
+  #footer .footer-logo {
+    height: 25%;
+    width: 100%;
+  }
+  #footer .footer-container .project-description {
+    width: 90%;
+  }
+}
+.popUp {
+  width: 15rem;
+  height: 4rem;
+  background: black;
+  font-family: Montserrat;
+  font-size: 150%;
+  color: #fff;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 3rem;
+  bottom: 10rem;
+  z-index: 99;
+  transition: all 500ms ease;
+  border-radius: 0.3rem;
+  transform: translateX(200%);
+}
+
+.loading-popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 40vh;
+  gap: 2rem;
+  width: 60vw;
+  color: #b02d47;
+  background-color: #f3d70d;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed !important;
+  font-size: 200%;
+  font-family: Montserrat;
+  border-radius: 0.5rem;
+  transition: all 300ms ease;
+}
+.loading-popup .spinner {
+  width: 10rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 3px solid #b02d47;
+  border-left: 3px solid transparent;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=footer.css.map */

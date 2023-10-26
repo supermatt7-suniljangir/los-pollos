@@ -1,0 +1,133 @@
+@import "../var/mixins-variables-functions";
+
+#jl {
+  height: 100vh;
+  position: relative;
+
+  .jl-container {
+    height: 100%;
+    @include dfc;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start !important;
+
+    .jl-container-left {
+      .jl-heading {
+        font-weight: 600 !important;
+      }
+      height: max-content;
+      padding: 2rem;
+      position: relative;
+
+      width: 50%;
+      color: $secondary;
+      p {
+        font-family: Montserrat;
+      }
+      .know-more {
+        margin: 2rem;
+        padding: 0.5rem 1rem;
+        @include color-combo2;
+        border: none;
+
+        cursor: pointer;
+      }
+    }
+    .jl-container-right {
+      margin-top: 10rem;
+      position: relative;
+      width: 50%;
+      height: max-content;
+      .family-pic {
+        border-radius: 0.5rem;
+        position: absolute;
+        transition: all 200ms ease;
+        &:hover {
+          z-index: 3 !important;
+          border: 3px solid $secondary;
+          transform: scale(1.05);
+        }
+      }
+      .family1 {
+        width: 45rem;
+        height: 28rem;
+        z-index: 3;
+        right: 25rem;
+        top: 15rem;
+      }
+      .family2 {
+        z-index: 2;
+        right: 0;
+        width: 50rem;
+      }
+    }
+  }
+  .slip {
+    height: 30rem;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background: $secondary;
+    position: absolute;
+    bottom: 2rem;
+    img {
+      width: 35rem;
+      height: 10rem;
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 200ms ease;
+      &:hover {
+        border: 3px solid $secondary;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #jl {
+    position: relative;
+    height: clamp(70vh, 70vh, 80vh);
+
+    .slip {
+      display: none;
+      img {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+    }
+    .jl-container {
+      flex-direction: column;
+      position: relative;
+      .jl-container-left {
+        .jl-heading {
+          margin: 0;
+        }
+        height: 30%;
+        position: relative;
+        width: 100%;
+        padding: 3rem;
+        height: max-content;
+      }
+      .jl-container-right {
+        height: 60%;
+        margin: 5rem 0 0 0;
+        width: 100%;
+        .family1 {
+          width: 70vw;
+          height: unset;
+          left: 5%;
+          top: 25%;
+        }
+        .family2 {
+          width: 70vw;
+          height: unset;
+          top: 0%;
+          right: 5%;
+        }
+      }
+    }
+  }
+}

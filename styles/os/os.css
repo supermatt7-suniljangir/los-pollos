@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+#os {
+  position: relative;
+  height: 110vh !important;
+}
+#os h2 {
+  color: #b02d47;
+  position: absolute;
+  left: 50%;
+  top: 1rem;
+  transform: translateX(-50%);
+}
+#os .os-container {
+  position: relative;
+  height: 105vh;
+}
+#os .os-container .story-pic {
+  border-radius: 0.4rem;
+  z-index: 1;
+  position: absolute;
+  width: 40%;
+}
+#os .os-container .story-pic-1 {
+  top: 18%;
+}
+#os .os-container .story-pic-2 {
+  bottom: 2rem;
+  right: 0rem;
+}
+#os .os-container .textbox {
+  border-radius: 0.4rem;
+  font-family: Montserrat;
+  position: absolute;
+  color: #f3d70d;
+  background-color: #b02d47;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 35%;
+  padding: 2rem;
+}
+#os .os-container .textbox p {
+  width: 80%;
+}
+#os .os-container .textbox1 {
+  justify-content: flex-end;
+  top: 22%;
+  right: 2rem;
+}
+#os .os-container .textbox2 {
+  justify-content: flex-start;
+  bottom: 3rem;
+  left: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  #os {
+    height: -moz-max-content !important;
+    height: max-content !important;
+    position: relative;
+  }
+  #os h2 {
+    position: relative;
+    text-align: center;
+  }
+  #os .os-container {
+    position: relative;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  #os .os-container .textbox {
+    margin: 2rem 0;
+    position: relative;
+    padding: 2rem;
+    width: 100%;
+    height: 20%;
+    inset: 0 !important;
+  }
+  #os .os-container .textbox p {
+    width: 100%;
+  }
+  #os .os-container .story-pic {
+    inset: 0 !important;
+    position: relative;
+    width: 45%;
+    margin: 0 1rem;
+  }
+}/*# sourceMappingURL=os.css.map */

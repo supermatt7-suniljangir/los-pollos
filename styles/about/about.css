@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+#about {
+  height: auto !important;
+  overflow: hidden;
+}
+#about .about-first-container {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+}
+#about .about-first-container .about-first-container-left {
+  width: 30%;
+}
+#about .about-first-container .about-first-container-left .about-pollos-logo {
+  pointer-events: none !important;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+          user-select: none !important;
+  margin-left: 5rem;
+  width: 70%;
+}
+#about .about-first-container .about-first-container-right {
+  color: #b02d47;
+  width: 60%;
+}
+#about .about-first-container .about-first-container-right h4 {
+  margin: 1rem;
+  font-weight: 400;
+  font-family: Montserrat;
+}
+#about .about-first-container .about-first-container-right h3 {
+  margin: 1rem;
+  text-transform: capitalize;
+  font-weight: 600 !important;
+  letter-spacing: 2.5px;
+}
+#about .about-first-container .about-first-container-right p {
+  margin: 1rem;
+  font-weight: 500;
+  font-family: Montserrat;
+  line-height: 30px;
+  letter-spacing: 1.4px;
+}
+#about .about-second-container {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  color: #f3d70d;
+  background-color: #b02d47;
+}
+#about .about-second-container .about-second-container-left {
+  color: #b02d47;
+  background-color: #f3d70d;
+  width: 40%;
+  height: 92%;
+  overflow: hidden;
+}
+#about .about-second-container .about-second-container-left .gus {
+  width: 130%;
+  height: 100%;
+  margin-left: -8rem;
+}
+#about .about-second-container .about-second-container-right {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  margin: -10rem 0 0 3rem;
+  gap: 4rem;
+  flex-direction: column;
+}
+#about .about-second-container .about-second-container-right .welcome {
+  font-size: 10rem;
+  letter-spacing: 6px;
+}
+#about .about-second-container .about-second-container-right p {
+  letter-spacing: 2px;
+  position: relative;
+  font-family: Montserrat !important;
+  padding: 0 0 5rem 0;
+}
+#about .about-second-container .about-second-container-right p b {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #about {
+    flex-direction: row;
+    height: 60vh;
+  }
+  #about .about-first-container {
+    height: 10rem !important;
+    color: #f3d70d;
+    background-color: #b02d47;
+  }
+  #about .about-first-container .about-first-container-left {
+    width: 20%;
+  }
+  #about .about-first-container .about-first-container-left .about-pollos-logo {
+    margin-left: 1rem !important;
+    width: 8rem !important;
+  }
+  #about .about-first-container .about-first-container-right {
+    color: #f3d70d;
+    width: 70%;
+  }
+  #about .about-first-container .about-first-container-right p {
+    display: none !important;
+  }
+  #about .about-first-container .about-first-container-right h4 {
+    display: none !important;
+  }
+  #about .about-first-container .about-first-container-right h3 {
+    margin: 0 !important;
+  }
+  #about .about-second-container {
+    height: 40vh;
+    width: 100%;
+  }
+  #about .about-second-container .about-second-container-left {
+    display: none !important;
+  }
+  #about .about-second-container .about-second-container-left .gus {
+    display: none !important;
+  }
+  #about .about-second-container .about-second-container-right {
+    width: 90%;
+    align-items: center;
+    margin: 0 !important;
+  }
+}/*# sourceMappingURL=about.css.map */

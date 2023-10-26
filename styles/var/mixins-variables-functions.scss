@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@mixin universalDefaults {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+@mixin dfc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin align-center-abs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin color-combo1 {
+  color: $secondary;
+  background-color: $primary;
+}
+
+@mixin color-combo2 {
+  color: $primary;
+  background-color: $secondary;
+}
+
+$alignCenter: center;
+$hidden: none;
+$invisible: 0;
+
+// colors
+$primary: #f3d70d;
+$primary-pale: #fccc00;
+$secondary: #b02d47;
+$dark: #040404;
+
+// fonts
+$primary-fonts: "Lora", serif;
+$secondary-fonts: "Montserrat", sans-serif;

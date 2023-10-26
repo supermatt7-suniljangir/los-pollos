@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+#jl {
+  height: 100vh;
+  position: relative;
+}
+#jl .jl-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start !important;
+}
+#jl .jl-container .jl-container-left {
+  height: -moz-max-content;
+  height: max-content;
+  padding: 2rem;
+  position: relative;
+  width: 50%;
+  color: #b02d47;
+}
+#jl .jl-container .jl-container-left .jl-heading {
+  font-weight: 600 !important;
+}
+#jl .jl-container .jl-container-left p {
+  font-family: Montserrat;
+}
+#jl .jl-container .jl-container-left .know-more {
+  margin: 2rem;
+  padding: 0.5rem 1rem;
+  color: #f3d70d;
+  background-color: #b02d47;
+  border: none;
+  cursor: pointer;
+}
+#jl .jl-container .jl-container-right {
+  margin-top: 10rem;
+  position: relative;
+  width: 50%;
+  height: -moz-max-content;
+  height: max-content;
+}
+#jl .jl-container .jl-container-right .family-pic {
+  border-radius: 0.5rem;
+  position: absolute;
+  transition: all 200ms ease;
+}
+#jl .jl-container .jl-container-right .family-pic:hover {
+  z-index: 3 !important;
+  border: 3px solid #b02d47;
+  transform: scale(1.05);
+}
+#jl .jl-container .jl-container-right .family1 {
+  width: 45rem;
+  height: 28rem;
+  z-index: 3;
+  right: 25rem;
+  top: 15rem;
+}
+#jl .jl-container .jl-container-right .family2 {
+  z-index: 2;
+  right: 0;
+  width: 50rem;
+}
+#jl .slip {
+  height: 30rem;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background: #b02d47;
+  position: absolute;
+  bottom: 2rem;
+}
+#jl .slip img {
+  width: 35rem;
+  height: 10rem;
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 200ms ease;
+}
+#jl .slip img:hover {
+  border: 3px solid #b02d47;
+}
+
+@media screen and (max-width: 768px) {
+  #jl {
+    position: relative;
+    height: 70vh;
+  }
+  #jl .slip {
+    display: none;
+  }
+  #jl .slip img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  #jl .jl-container {
+    flex-direction: column;
+    position: relative;
+  }
+  #jl .jl-container .jl-container-left {
+    height: 30%;
+    position: relative;
+    width: 100%;
+    padding: 3rem;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  #jl .jl-container .jl-container-left .jl-heading {
+    margin: 0;
+  }
+  #jl .jl-container .jl-container-right {
+    height: 60%;
+    margin: 5rem 0 0 0;
+    width: 100%;
+  }
+  #jl .jl-container .jl-container-right .family1 {
+    width: 70vw;
+    height: unset;
+    left: 5%;
+    top: 25%;
+  }
+  #jl .jl-container .jl-container-right .family2 {
+    width: 70vw;
+    height: unset;
+    top: 0%;
+    right: 5%;
+  }
+}/*# sourceMappingURL=jl.css.map */

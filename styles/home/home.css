@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#home .home-container-left {
+  color: #f3d70d;
+  background-color: #b02d47;
+  font-family: "Lora", serif;
+  width: 70%;
+  height: 90%;
+  padding: 2rem;
+}
+#home .home-container-left .lps {
+  font-size: 12rem;
+}
+#home .home-container-left .hero-para {
+  margin-block: 2rem;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
+#home .home-container-right {
+  width: 30%;
+}
+#home .home-container-right .h-home-burger {
+  margin-left: -1rem;
+  width: 120%;
+}
+
+@media only screen and (max-width: 768px) {
+  #home {
+    flex-direction: column;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  #home .home-container-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #home .home-container-left .lps {
+    font-size: 10rem;
+  }
+  #home .home-container-left .hero-para {
+    width: 90%;
+  }
+  #home .home-container-right {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+  }
+  #home .home-container-right .h-home-burger {
+    margin: 0;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+#menu {
+  position: relative;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.688) 0%, rgba(0, 0, 0, 0.57) 100%), url(/imgs/chicken-background.webp), lightgray 50%/cover no-repeat;
+  background-size: cover;
+}
+#menu h2 {
+  padding: 2rem;
+  color: #f3d70d;
+  font-weight: 700;
+}
+#menu .menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+#menu .menu-container .menu-card {
+  transition: all 500ms ease;
+  box-shadow: rgba(152, 42, 64, 0.579) 0px 2px 5px 1px;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  color: #b02d47;
+  background-color: #f3d70d;
+  width: 27rem;
+  height: 30rem;
+  position: relative !important;
+  overflow: hidden;
+}
+#menu .menu-container .menu-card .menu-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin-left: -2rem;
+  width: 120%;
+  height: 75%;
+}
+#menu .menu-container .menu-card .menu-name {
+  font-weight: 600;
+  position: absolute;
+  top: 75%;
+  font-family: Montserrat;
+}
+#menu .menu-container .menu-card .menu-price {
+  transition: all 400ms ease;
+  color: #f3d70d;
+  background-color: #b02d47;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  padding: 0.3rem 2rem;
+}
+#menu .menu-container .menu-card:hover {
+  transform: scale(1.1);
+  color: #f3d70d;
+  background-color: #b02d47;
+}
+#menu .menu-container .menu-card:hover .menu-price {
+  color: #b02d47;
+  background-color: #f3d70d;
+}
+#menu .taste-the-family-logo {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1rem;
+  width: 20rem;
+}
+
+@media screen and (max-width: 768px) {
+  #menu {
+    height: 100vh;
+  }
+  #menu .menu-container {
+    justify-content: flex-start;
+    height: 100% !important;
+    gap: 3rem;
+    flex-direction: column;
+  }
+  #menu .menu-container .menu-card {
+    width: 50%;
+    height: 25%;
+  }
+}
+@media screen and (max-width: 495px) {
+  #menu {
+    height: 110vh;
+  }
+  #menu .menu-container .menu-card {
+    width: 65%;
+    height: 26%;
+  }
+}/*# sourceMappingURL=menu.css.map */
